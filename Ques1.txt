@@ -1,0 +1,20 @@
+Inheritance, Polymorphism
+Assume the following requirement. A company has different types of employees namely General, Apprentice, Contract.
+General employee will have data as empno, name, designation, join date, dob, email
+Contract employee will have general data and additional details like start date, end date, 	contractOrganisation
+Apprentice will have general data with additional details like start date, end date, reportingTo
+
+Design and implement classes using inheritance and polymorphism to represent the above data. Use base classes to represent the common data and operations/methods. 
+
+Override Object.toString() method in each of the data classes as follows:
+                General – EmpNo + “_” + designation
+                Contract – EmpNo + “_” + startDate + “_” + endDate
+                Apprentice – EmpNo + “_” + startDate + “_” + endDate + “_” + reportingTo
+
+Use overloaded constructors in each data class to set the data
+
+Implement 
+getAge() method to return age of the employee based on dob 
+getNumberOfMonths() method to return number of months based on join date
+showData() method to display  details of general employee, override the same method in other classes to include additional details.
+Implement showDuration() to display the number of days between start date and end date for contract and apprentice employees
